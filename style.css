@@ -44,7 +44,7 @@ ul li {
     display: none;
     font-size: 24px;
     cursor: pointer;
-    color: #eb1b33;
+    color: #00171F;
 }
 
 .menu-title {
@@ -84,7 +84,7 @@ ul li {
 
 .header-menu ul li a:hover,
 .header-menu ul li a.menu-active {
-    color: #878787;
+    color: white;
     text-decoration: none;
 }
 
@@ -103,7 +103,7 @@ ul li {
     }
     .responsive-sub-menu{
         display: flex;
-        z-index: -1;
+        z-index: 99;
         flex-direction: column;
         position: absolute;
         top: 80px;
@@ -111,13 +111,13 @@ ul li {
         width: 100%;
         background: #fff;
         order:1;
-        transform: translateY(-500px);
-        transition: .3s linear;
-        box-shadow: 0 0 10px rgba(0,0,0,.2)
+        display: none;
+        transition: all .3s;
     }
 
 	.responsive-active-sub-menu {
-        transform: translateX(0px);
+        display: block;
+        transition: all .3s;
     }
 
     .logo{
@@ -152,6 +152,12 @@ ul li {
 .position-row{
     display: flex;
     flex-direction: row;
+}
+
+@media screen and (max-width:768px) {
+    .position-row{
+        flex-direction: column;
+    }
 }
 
 .background-shape {
@@ -226,8 +232,7 @@ h2{
 
 .text {
     color: white;
-    padding: 20px;
-    border-radius: 10px;
+    padding-top: 10px;
 }
 
 .block-montre {
@@ -350,6 +355,11 @@ h2{
     letter-spacing: -0.48px;
 }
 
+df-messenger {
+    --df-messenger-button-titlebar-color: #00171F;
+    --df-messenger-chat-background-color: #fafafa;
+    --df-messenger-send-icon: #fafafa;
+   }
 
 .footer-cta {
     border-bottom: 1px solid #373636;
@@ -378,8 +388,6 @@ h2{
     color: #757575;
     font-size: 15px;
 }
-
-
 
 
 .block-configurer {
@@ -454,15 +462,19 @@ h2{
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 160px;
+    margin-bottom: 120px;
+}
+
+@media screen and (max-width:768px) {
+    .container-atelier {
+        flex-direction: column;
+    }
 }
 
 #text-atelier {
     white-space: wrap;
     width: 600px;
-    height: 100px;
-    margin-top: -50px;
-    margin-left: -500px;
 }
 
 #text-atelier #line {
@@ -478,14 +490,9 @@ h2{
     margin-left: 0px;
 }
 
-#atelier-img {
-    position: absolute;
-    margin-left: 700px;
-    margin-top: 50px;
-}
-
 #atelier-img img {
     margin-top: 70px;
+    margin: 20px;
     width: 530px;
     height: 370px;
 }
@@ -497,6 +504,7 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .client{
@@ -578,15 +586,15 @@ h2{
 }
 
 .facebook-bg {
-    background: #3B5998;
+    background: #00171F;
 }
 
 .twitter-bg {
-    background: #55ACEE;
+    background: #00171F;
 }
 
 .google-bg {
-    background: #DD4B39;
+    background: #00171F;
 }
 
 .img-footer{
@@ -613,6 +621,29 @@ h2{
     letter-spacing: -0.9px;
 }
 
+.ligne-horizontal-footer{
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+    background-color: #000;
+}
+
+.copyright{
+    display: flex;
+    justify-content: end;
+}
+
+.copyright p{
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #000;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
 .footer-widget-heading h3 {
     color: #000;
     font-size: 20px;
@@ -636,11 +667,6 @@ h2{
     float: left;
     width: 50%;
     margin-bottom: 12px;
-}
-
-.footer-widget ul li a:hover {
-    color: #050F8B;
-    transition: .2s all;
 }
 
 .footer-widget ul li a {
@@ -709,4 +735,18 @@ h2{
     font-size: 14px;
     color: #878787;
     transition: .2s all;
+}
+
+@media screen and (max-width:768px) {
+    .montre-header img{
+        width: 220px;
+    }
+    .title{
+        font-size: 28px;
+    }
+}
+
+.btn:hover{
+    background: var(--black, #222222);
+    color: white;
 }

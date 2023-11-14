@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 </head>
 <body>
     <header>
@@ -33,16 +35,28 @@
         </div>
     </header>
 
+    <df-messenger
+        chat-icon="./img/chatbot.png"
+        intent="WELCOME"
+        chat-title="Nous somme la pour vous aider"
+        agent-id="417d2750-ae47-4981-a3b1-542fc8a8f0c7"
+        language-code="fr"
+        expand
+        user-id = "U2FsdGVkX1+kJc8EhPG+lc6yKrnFFxPj4+NuEiK6X3PE0m6EwDaqJINqrfE7Q1O/Y9NQNE+9F369R+69usiFtQ=="
+        >
+    </df-messenger>
+
     <section>
         <div class="container-header">
             <div class="info-text">
                 <h1 class="title">Portez votre histoire au poignet avec des montres francaises et personnalisables.</h1>
                 <div class="line-horizontal"></div>
                 <h2>L’Elégance de la Bourgogne à chaque instant.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur. Sit velit fermentum semper ut nisl sit sed leo. Magna eu pulvinar aliquam pulvinar.</p>
+                <p>Personnalisez votre montre avec un design unique qui reflète votre style.<br> Alors, prêt(e) à donner
+                    vie à votre montre personnalisée ?</p>
                 <a href="#" class="btn">Personnaliser ma montre</a>
             </div>
-            <div>
+            <div class="montre-header">
                 <img src="./img/Firefly_wallpaper_of_a_watch_15380__1_-removebg-preview 1.png" alt="">
             </div>
         </div>
@@ -84,8 +98,10 @@
                         <h3>LAXA WATCH</h3><div class="line"></div>
                     </div>
                     <h4 class="second-title">Personnalisez la à votre goût</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur. Egestas massa euismod id diam tortor pretium ipsum. Porta tempor diam suspendisse sapien nec mi convallis risus eleifend.</p>
-                    <p>A partir de 600€</p>
+                    <p>Personnalisez votre LAXA WATCH selon vos préférences. Choisissez parmi notre gamme exclusive de
+                        cadrans, de bracelets et de finitions pour créer une montre qui correspond parfaitement à votre
+                        style unique.</p>
+                    <p>A partir de 999€</p>
                 </div>
             </div>
             <div class="block-montre-border">
@@ -95,8 +111,10 @@
                         <h3>BIXBI WATCH</h3><div class="line"></div>
                     </div>
                     <h4 class="second-title">Recevez votre montre en kit</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur. Egestas massa euismod id diam tortor pretium ipsum. Porta tempor diam suspendisse sapien nec mi convallis risus eleifend.</p>
-                    <p>A partir de 600€</p>
+                    <p>Assemblez votre propre BIXBI WATCH avec notre kit exclusif. Plongez dans une expérience unique en
+                        construisant votre montre de A à Z Découvrez la liberté de
+                        créer avec la BIXBI WATCH en kit.</p>
+                    <p>A partir de 899€</p>
                 </div>
             </div>
         </div>
@@ -114,8 +132,9 @@
                     <h3>Personnalisable en temps réel avec notre application</h3>
                     <div id="line"></div>
                     <div id="text1">
-                        <p>Lorem ipsum dolor sit amet consectetur. Egestas massa euismod id diam tortor pretium ipsum.
-                            Porta tempor diam suspendisse sapien nec mi convallis risus eleifend.</p>
+                        <p>Configurez votre montre en temps réel grâce à notre application intuitive. Rendez votre
+                            montre aussi unique que vous. À partir de
+                            maintenant, la personnalisation est entre vos mains !!</p>
                     </div>
                     <div id="image-frame">
                         <img src="./img/Frame 69.png" class="image" alt="frame69png">
@@ -126,42 +145,39 @@
         </div>
     </section>
 
-    <br><br><br><br> <br><br><br><br>
-
     <section class="container-atelier">
         <div id="text-atelier">
-            <h2>Venez visitez notre atelier</h2>
-            <h2>
-                au plein coeur de la Bourgogne
-            </h2>
+            <h2 class="title">Venez visitez notre atelier</h2>
+            <h2 class="title">au plein coeur de la Bourgogne</h2>
             <div id="line"></div>
-            <p>Lorem ipsum dolor sit amet consectetur. Egestas massa euismod id diam tortor pretium ipsum. Porta
-                tempor diam suspendisse sapien nec mi convallis risus eleifend. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Illo numquam, ipsam dolorum veritatis, voluptas officia corrupti voluptatum fugit modi
-                non nobis eveniet exercitationem reprehenderit! Nam laboriosam iure perspiciatis labore laborum?</p>
+            <p>Explorez l'art de l'horlogerie dans notre atelier situé au plein cœur de la Bourgogne. Plongez-vous dans
+                l'univers fascinant de la création de montres, où le savoir-faire artisanal rencontre l'innovation
+                moderne. Rencontrez nos artisans passionnés, découvrez les techniques traditionnelles et les
+                technologies de pointe qui donnent vie à chaque montre unique que nous créons !</p>
         </div>
         <div id="atelier-img">
-            <img src="./img/unsplash_C2CMrC1zcWw.png" class="image" alt="image-atelier">
+            <img src="./img/unsplash_C2CMrC1zcWw.png" alt="image-atelier">
         </div>
     </section>
-
-    <br><br><br><br> <br><br><br><br><br><br><br><br>
 
     <section>
         <div class="temoignage">
             <div class="client">
                 <img src="./img/autremonsier.png" alt="" class="icon">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit veniam similique iure quos dolorem dolor ipsam aliquid blanditiis sint quae ducimus quod, quam qui eveniet autem praesentium nisi voluptatem placeat!</p>
+                <p>J'ai été impressionné par la qualité exceptionnelle de ma montre personnalisée. La possibilité de
+                    choisir chaque détail a rendu cette expérience unique. J'ai une œuvre d'art au poignet!</p>
                 <div class="text">Louis Alfonso</div>
             </div>
             <div class="client">
                 <img src="./img/madame.png" alt="" class="icon">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit veniam similique iure quos dolorem dolor ipsam aliquid blanditiis sint quae ducimus quod, quam qui eveniet autem praesentium nisi voluptatem placeat!</p>
+                <p>La montre que j'ai assemblée moi-même est non seulement élégante mais aussi une source de fierté.
+                    Monter ma propre montre a été une expérience enrichissante et passionnante.</p>
                 <div class="text">Manon Lino</div>
             </div>
             <div class="client">
                 <img src="./img/monsieur.png" alt="" class="icon">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit veniam similique iure quos dolorem dolor ipsam aliquid blanditiis sint quae ducimus quod, quam qui eveniet autem praesentium nisi voluptatem placeat!</p>
+                <p>La qualité et le style de ma montre reflètent vraiment l'artisanat exceptionnel de l'atelier. C'est
+                    plus qu'une simple montre, c'est une déclaration de style et de sophistication.</p>
                 <div class="text">Albert François</div>
             </div>
         </div>
@@ -207,6 +223,12 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="ligne-horizontal-footer"></div>
+                <div class="copyright">
+                    <p>Tous droits réservés</p>
+                    <p>Conditions générales de ventes</p>
+                    <p>Politique de confidentialité</p>
                 </div>
             </div>
         </div>
